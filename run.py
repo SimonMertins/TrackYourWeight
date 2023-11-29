@@ -12,8 +12,16 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('track_your_weight')
 
-old = SHEET.worksheet('old')
 
-data = old.get_all_values()
+def get_old_data():
+    """
+    Get old weight input from user
+    """
+    print("Please enter your weight in Kg.")
+    print("Exampel: 75.6\n")
 
-print(data)
+    data_str = input("Enter your old weight here: ")
+    print(f"Your old weight is {data_str}Kg")
+
+
+get_old_data()
