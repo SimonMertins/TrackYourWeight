@@ -18,10 +18,26 @@ def get_old_data():
     Get old weight input from user
     """
     print("Please enter your weight in Kg.")
-    print("Exampel: 75.6\n")
+    print("Exampel: 72.0 or 75.6\n")
 
     data_str = input("Enter your old weight here: ")
-    print(f"Your old weight is {data_str}Kg")
+
+    old_data = data_str.split(",")
+    validate_data(old_data)
+
+
+def validate_data(weight):
+    """
+    Convert string data into integers and raise ValueError
+    if wrong value is entered
+    """
+    try:
+        if len(weight) != 1:
+            raise ValueError(
+                f"Only 1 weight required, you provided {len(weight)}"
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again")
 
 
 get_old_data()
