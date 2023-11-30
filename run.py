@@ -19,7 +19,7 @@ def get_old_data():
     """
     while True:
         print("Please enter your weight in Kg.")
-        print("Exampel: 72 or 75.8\n")
+        print("Example: 72 or 75.8\n")
 
         data_str = input("Enter your old weight here: ")
 
@@ -38,7 +38,7 @@ def get_new_data():
     """
     while True:
         print("Please enter your weight in Kg.")
-        print("Exampel: 72 or 75.8\n")
+        print("Example: 72 or 75.8\n")
 
         data_str = input("Enter your new weight here: ")
 
