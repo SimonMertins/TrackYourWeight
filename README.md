@@ -72,5 +72,5 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 ##Credits
 * Code Institute for deployment terminal
 
-* Code Institute [Love Sandwiches](https://github.com/SimonMertins/LoveSandwiches/tree/main)
+* Code Institute [Love Sandwiches](https://github.com/Code-Institute-Org/p3-template)
 were very helpful by making me understand how to write the codee for this project.
