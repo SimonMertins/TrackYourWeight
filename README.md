@@ -31,7 +31,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 Happy coding!
 
-#Track-Your-Weight
+# Track-Your-Weight
 
 Track Your Weight is a terminal tool, that runs in the Code Institute mock terminal on Heroku.
 
@@ -42,7 +42,7 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 <!--add picture and link on deployd version-->
 
 
-##Tabel Of Content
+## Tabel Of Content
 
 [Track Your Weight](#Track-Your-Weight)
 
@@ -70,6 +70,10 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 
 ### Validation
 
+* No errors on PEP8.
+
+But I did get this comment in PEP8, 98: E501 line too long (85 > 79 characters).
+
 
 ## Deployment
 
@@ -78,4 +82,4 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 * Code Institute for deployment terminal
 
 * Code Institute [Love Sandwiches](https://github.com/Code-Institute-Org/p3-template)
-were very helpful by making me understand how to write the codee for this project.
+were very helpful by making me understand how to write the code for this project.
