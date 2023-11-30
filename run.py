@@ -50,4 +50,16 @@ def validate_data(weight):
     return True
 
 
+def update_old_worksheet(data):
+    """
+    Update old weight worksheet, with the weight provided by the user.
+    """
+    print("Updating old weight worksheet...\n")
+    old_worksheet = SHEET.worksheet("old")
+    old_worksheet.append_row(data)
+    print("Old weight added successfully!\n")
+
+
 data = get_old_data()
+old_data = [float(num) for num in data]
+update_old_worksheet(old_data)
