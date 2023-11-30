@@ -30,3 +30,47 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ---
 
 Happy coding!
+
+#Track-Your-Weight
+
+Track Your Weight is a terminal tool, that runs in the Code Institute mock terminal on Heroku.
+
+Track Your Weight allows the user to enter their old weight and their new weight in a easy way, the tool will then calculate and tell the user how much weight the user have lost or gained.
+
+Track Your Weight will also add the user weight inputs and weight difference to a gooogle spreadsheet.
+
+<!--add picture and link on deployd version-->
+
+
+##Tabel Of Content
+[Track Your Weight](#Track-Your-Weight)
+[Features](#Features)
+[Testing](#Testing)
+[Deployment](#Deployment)
+[Credits](#Credits)
+
+##Features
+
+
+###Features to add
+
+
+##Testing
+
+###Bugs
+
+####Resolved Bugs
+
+####Remaning Bugs
+
+###Validation
+
+
+##Deployment
+
+
+##Credits
+* Code Institute for deployment terminal
+
+* Code Institute [Love Sandwiches](https://github.com/SimonMertins/LoveSandwiches/tree/main)
+were very helpful by making me understand how to write the codee for this project.
