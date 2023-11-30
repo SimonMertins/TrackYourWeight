@@ -19,7 +19,7 @@ def get_old_data():
     """
     while True:
         print("Please enter your weight in Kg.")
-        print("Exampel: 72.0 or 75.8\n")
+        print("Exampel: 72 or 75.8\n")
 
         data_str = input("Enter your old weight here: ")
 
@@ -30,6 +30,25 @@ def get_old_data():
             break
 
     return old_data
+
+
+def get_new_data():
+    """
+    Get new weight input from user
+    """
+    while True:
+        print("Please enter your weight in Kg.")
+        print("Exampel: 72 or 75.8\n")
+
+        data_str = input("Enter your new weight here: ")
+
+        new_data = data_str.split(",")
+
+        if validate_data(new_data):
+            print("Weight is valid!")
+            break
+
+    return new_data
 
 
 def validate_data(weight):
@@ -60,6 +79,30 @@ def update_old_worksheet(data):
     print("Old weight added successfully!\n")
 
 
-data = get_old_data()
-old_data = [float(num) for num in data]
-update_old_worksheet(old_data)
+def update_new_worksheet(data):
+    """
+    Update new weight worksheet, with the weight provided by the user.
+    """
+    print("Updating new weight worksheet...\n")
+    new_worksheet = SHEET.worksheet("new")
+    new_worksheet.append_row(data)
+    print("New weight added successfully!\n")
+
+
+def main():
+    """
+    For old weight
+    """
+    data = get_old_data()
+    old_data = [float(num) for num in data]
+    update_old_worksheet(old_data)
+    """
+    For new weight
+    """
+    data = get_new_data()
+    new_data = [float(num) for num in data]
+    update_new_worksheet(new_data)
+
+
+print("Welcome to Track Your Weight!")
+main()
