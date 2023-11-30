@@ -50,6 +50,8 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 
 [Testing](#Testing)
 
+[Technologies Used](#Technologies-Used)
+
 [Deployment](#Deployment)
 
 [Credits](#Credits)
@@ -62,17 +64,31 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 
 ## Testing
 
+
 ### Bugs
+
 
 #### Resolved Bugs
 
+
 #### Remaning Bugs
+
 
 ### Validation
 
 * No errors on PEP8.
 
 But I did get this comment in PEP8, 98: E501 line too long (85 > 79 characters).
+I managed to fixed that by changing this line:
+
+print(f"You have {'gained' if difference > 0 else 'lost'} {abs(difference)} Kg.")
+
+to this:
+
+print(f"You have {'gained' if difference > 0 else 'lost'} "
+      f"{abs(difference)} Kg.")
+
+## Technologies-Used
 
 
 ## Deployment
