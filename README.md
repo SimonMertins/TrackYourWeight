@@ -43,33 +43,38 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 
 
 ##Tabel Of Content
+
 [Track Your Weight](#Track-Your-Weight)
+
 [Features](#Features)
+
 [Testing](#Testing)
+
 [Deployment](#Deployment)
+
 [Credits](#Credits)
 
-##Features
+## Features
 
 
-###Features to add
+### Features to add
 
 
-##Testing
+## Testing
 
-###Bugs
+### Bugs
 
-####Resolved Bugs
+#### Resolved Bugs
 
-####Remaning Bugs
+#### Remaning Bugs
 
-###Validation
-
-
-##Deployment
+### Validation
 
 
-##Credits
+## Deployment
+
+
+## Credits
 * Code Institute for deployment terminal
 
 * Code Institute [Love Sandwiches](https://github.com/Code-Institute-Org/p3-template)
