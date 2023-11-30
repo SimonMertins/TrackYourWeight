@@ -89,6 +89,19 @@ def update_new_worksheet(data):
     print("New weight added successfully!\n")
 
 
+def calculate_and_update_difference(old_weight, new_weight):
+    """
+    Calculate the difference between old weight and new weight,
+    print the result and update the difference worksheet
+    """
+    difference = new_weight - old_weight
+    print(f"You have {'gained' if difference > 0 else 'lost'} {abs(difference)} Kg.")
+
+    difference.worksheet = SHEET.worksheet("difference")
+    difference_worksheet.append_row([difference])
+    print("Difference successfully added to worksheet.\n")
+
+
 def main():
     """
     For old weight
@@ -102,6 +115,10 @@ def main():
     data = get_new_data()
     new_data = [float(num) for num in data]
     update_new_worksheet(new_data)
+    """
+    For difference
+    """
+    calculate_and_update_difference(old_data[0], new_data[0])
 
 
 print("Welcome to Track Your Weight!")
