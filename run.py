@@ -21,7 +21,7 @@ def get_old_data():
         print("Please enter your weight in Kg.")
         print("Example: 72 or 75.8\n")
 
-        data_str = input("Enter your old weight here: \n")
+        data_str = input("Enter your old weight here:\n")
 
         old_data = data_str.split(",")
 
@@ -40,7 +40,7 @@ def get_new_data():
         print("Please enter your weight in Kg.")
         print("Example: 72 or 75.8\n")
 
-        data_str = input("Enter your new weight here: \n")
+        data_str = input("Enter your new weight here:\n")
 
         new_data = data_str.split(",")
 
