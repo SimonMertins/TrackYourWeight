@@ -95,9 +95,10 @@ def calculate_and_update_difference(old_weight, new_weight):
     print the result and update the difference worksheet
     """
     difference = new_weight - old_weight
-    print(f"You have {'gained' if difference > 0 else 'lost'} {abs(difference)} Kg.")
+    print(f"You have {'gained' if difference > 0 else 'lost'} "
+          f"{abs(difference)} Kg.")
 
-    difference.worksheet = SHEET.worksheet("difference")
+    difference_worksheet = SHEET.worksheet("difference")
     difference_worksheet.append_row([difference])
     print("Difference successfully added to worksheet.\n")
 
