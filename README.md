@@ -39,6 +39,8 @@ Track Your Weight allows the user to enter their old weight and their new weight
 
 Track Your Weight will also add the user weight inputs and weight difference to a gooogle spreadsheet.
 
+[Link to spreadsheet](https://docs.google.com/spreadsheets/d/1lWFG9SQwQRJ0U6RkMB9GRJZyBvwutzNW-z8vFAwBce4/edit#gid=901748384)
+
 [Link to Track Your Weight](https://track-your-weight-2b6009af9b3e.herokuapp.com/)
 
 ![picture of Track Your Weight](/assets/images/Ui-dev.png)
@@ -60,27 +62,62 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 
 ## Features
 
+Track Your Weight is connected to a google spreadsheet named track-your-weight, the spreadsheet has 3 different worksheets, Old, New and difference.
+
+The 'Old' worksheet contain all the inputs of old weights.
+
+The 'New' worksheet contain all the inputs of new weights.
+
+The 'Difference' worksheet contain the difference between old weight and new weight
+
+ (Old weight - New weight = Difference). 
+
+* The first thing the user will see is a welcome message, and being asked to input their old weight.
+
+![Picture of welcome message and to input old weight](/assets/images/welcome.png)
+
+* When the user has entered their input of their old weight, the track-your-weight spreadsheet will be updated and the user will be asked to input their new weight.
+
+![picture of input new weight](/assets/images/new.png)
+
+* When the new weight input has been entered successfully the track-your-weight spreadsheet will be updated once again.
+
+* After both weight inputs has been entered succesfully, the user will be given their result of how much weight they have gained or lost. Which also will be updated to the spreadsheet.
+
+![picture of result](/assets/images/result.png)
+
+* If the input entered is invalid the user will get an error message and be asked to enter their weight again.
+
+Here is a example where I typed in 'wrong'.
+
+![picure of error message](/assets/images/wrong.png)
 
 ### Features to add
 
+* One feature I would likke to add is to give the users a choice to enter their name so it is easy to keep track in the spreadsheet. or give the user the opportunity to input the date so they can see when they updated the spreasheet.
 
 ## Testing
 
+I have conducted testing by giving it all sorts of differnt inputs valid and invalid, both before deployment and after it.
+
+The code has been tested in PEP8 and their is no errors.
 
 ### Bugs
 
-
 #### Resolved Bugs
 
+* I had a problem with updating the difference worksheet, but after staring at the code for quite a while I could see that it was a typo.
 
-#### Remaning Bugs
+Bugged line:
 
+difference.worksheet = SHEET.worksheet("difference")
 
-### Validation
+fixed line:
 
-* No errors on PEP8.
+difference_worksheet = SHEET.worksheet("difference")
 
-But I did get this comment in PEP8, 98: E501 line too long (85 > 79 characters).
+* I got this comment in PEP8, 98: E501 line too long (85 > 79 characters).
+
 I managed to fixed that by changing this line:
 
 print(f"You have {'gained' if difference > 0 else 'lost'} {abs(difference)} Kg.")
@@ -88,7 +125,18 @@ print(f"You have {'gained' if difference > 0 else 'lost'} {abs(difference)} Kg."
 to this:
 
 print(f"You have {'gained' if difference > 0 else 'lost'} "
+      
       f"{abs(difference)} Kg.")
+
+
+
+#### Remaning Bugs
+
+* No bugs currently.
+
+### Validation
+
+* No errors on PEP8.
 
 ## Technologies-Used
 
