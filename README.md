@@ -39,7 +39,9 @@ Track Your Weight allows the user to enter their old weight and their new weight
 
 Track Your Weight will also add the user weight inputs and weight difference to a gooogle spreadsheet.
 
-<!--add picture and link on deployd version-->
+[Link to Track Your Weight](https://track-your-weight-2b6009af9b3e.herokuapp.com/)
+
+![picture of Track Your Weight](/assets/images/Ui-dev.png)
 
 
 ## Tabel Of Content
