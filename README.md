@@ -1,36 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
-
-## Reminders
-
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
-
 # Track-Your-Weight
 
 Track Your Weight is a terminal tool, that runs in the Code Institute mock terminal on Heroku.
@@ -100,7 +67,7 @@ Here is a example where I typed in 'wrong'.
 
 ## Flowchart
 
-Here is a picture of the Flowchart I was using
+Here is a picture of the Flowchart I was using.
 
 ![Picture of flowchart](/assets/images/Flowchart.png)
 
@@ -154,13 +121,13 @@ print(f"You have {'gained' if difference > 0 else 'lost'} "
 
 * [Lucidchart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier2_mixed_search_brand_exact_&km_CPC_CampaignId=1520850463&km_CPC_AdGroupID=57697288545&km_CPC_Keyword=lucidcharts&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=354596046469&km_CPC_TargetID=kwd-84176206937&km_CPC_Country=2752&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=EAIaIQobChMIkuuH_fjuggMVVU-RBR0UMAI9EAAYASAAEgIV8vD_BwE)
 
-[Github](https://github.com)
+* [Github](https://github.com)
 
-[Google Cloud](https://cloud.google.com/gcp?utm_source=google&utm_medium=cpc&utm_campaign=emea-se-all-en-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_500236818945-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+GCP+~+General%23v3-KWID_43700060393216001-aud-606988878614:kwd-6458750523-userloc_1012228&utm_term=KW_google+cloud-NET_g-PLAC_&&gad_source=1&gclid=CjwKCAiApaarBhB7EiwAYiMwqgUljs4RUwG9ctjd9bM7Ieav2Cl-Pyf9Tw01MDv8OSNhtL7vMaIYexoCcWcQAvD_BwE&gclsrc=aw.ds&hl=en)
+* [Google Cloud](https://cloud.google.com/gcp?utm_source=google&utm_medium=cpc&utm_campaign=emea-se-all-en-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_500236818945-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+GCP+~+General%23v3-KWID_43700060393216001-aud-606988878614:kwd-6458750523-userloc_1012228&utm_term=KW_google+cloud-NET_g-PLAC_&&gad_source=1&gclid=CjwKCAiApaarBhB7EiwAYiMwqgUljs4RUwG9ctjd9bM7Ieav2Cl-Pyf9Tw01MDv8OSNhtL7vMaIYexoCcWcQAvD_BwE&gclsrc=aw.ds&hl=en)
 
-[Google spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1)
+* [Google spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1)
 
-[Heroku](https://id.heroku.com/login)
+* [Heroku](https://id.heroku.com/login)
 
 ## Deployment
 
