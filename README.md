@@ -52,6 +52,8 @@ Track Your Weight will also add the user weight inputs and weight difference to 
 
 [Features](#Features)
 
+[Flowchart](#flowchart)
+
 [Testing](#Testing)
 
 [Technologies Used](#Technologies-Used)
@@ -95,6 +97,12 @@ Here is a example where I typed in 'wrong'.
 ### Features to add
 
 * One feature I would likke to add is to give the users a choice to enter their name so it is easy to keep track in the spreadsheet. or give the user the opportunity to input the date so they can see when they updated the spreasheet.
+
+## Flowchart
+
+Here is a picture of the Flowchart I was using
+
+![Picture of flowchart](/assets/images/Flowchart.png)
 
 ## Testing
 
@@ -140,9 +148,36 @@ print(f"You have {'gained' if difference > 0 else 'lost'} "
 
 ## Technologies-Used
 
+* [CodeAnywhere](https://app.codeanywhere.com)
+
+* [VS Code](https://code.visualstudio.com)
+
+* [Lucidchart](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier2_mixed_search_brand_exact_&km_CPC_CampaignId=1520850463&km_CPC_AdGroupID=57697288545&km_CPC_Keyword=lucidcharts&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=354596046469&km_CPC_TargetID=kwd-84176206937&km_CPC_Country=2752&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=EAIaIQobChMIkuuH_fjuggMVVU-RBR0UMAI9EAAYASAAEgIV8vD_BwE)
+
+[Github](https://github.com)
+
+[Google Cloud](https://cloud.google.com/gcp?utm_source=google&utm_medium=cpc&utm_campaign=emea-se-all-en-bkws-all-all-trial-e-gcp-1011340&utm_content=text-ad-none-any-DEV_c-CRE_500236818945-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+GCP+~+General%23v3-KWID_43700060393216001-aud-606988878614:kwd-6458750523-userloc_1012228&utm_term=KW_google+cloud-NET_g-PLAC_&&gad_source=1&gclid=CjwKCAiApaarBhB7EiwAYiMwqgUljs4RUwG9ctjd9bM7Ieav2Cl-Pyf9Tw01MDv8OSNhtL7vMaIYexoCcWcQAvD_BwE&gclsrc=aw.ds&hl=en)
+
+[Google spreadsheet](https://docs.google.com/spreadsheets/u/0/?pli=1)
+
+[Heroku](https://id.heroku.com/login)
 
 ## Deployment
 
+Deployment was done using heroku.
+
+1. first step is to login on heroku.
+2. Then you press new and click on "create new app".
+3. choose a name for your new app and choose a region.
+4. Press settings and go down to config Vars
+5. Click reveal Config vars and add on key named "PORT" and set it to "8000" then you add another one named "CREDS" and copy in your json credentials.
+6. After that you go down to buildpack and add python and nodejs, it is very important to add python first.
+7. then you go up and press deploy.
+8. Use Github as deplyment method.
+9. Type in the name of your github repository and click on it.
+10. Go down to maual deploy and press "Deploy branch.
+
+That is all the steps I took to deploy this site.
 
 ## Credits
 * Code Institute for deployment terminal
